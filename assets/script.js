@@ -1,12 +1,16 @@
 document.getElementById('btn').addEventListener('click', function(event) {
     event.preventDefault();
   
-    var income = document.getElementById('income').value;
-    var rent = document.getElementById('Rent').value;
-    var car = document.getElementById('Car').value;
+    const income = document.getElementById('income').value;
+    const rent = document.getElementById('Rent').value;
+    const car = document.getElementById('Car').value;
+    const total = income - rent - car;
   
     console.log('Income:', income);
     console.log('Rent/Mortgage:', rent);
     console.log('Car Payment & Insurance:', car);
-    console.log('Total:', income - rent - car);
+    console.log(total);
+
+    const savingsTotal = document.getElementById('savingsTotal');
+    savingsTotal.innerHTML = 'You saved a total of '  + total +'!';
   });

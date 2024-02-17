@@ -8,4 +8,5 @@ document.getElementById('btn').addEventListener('click', function(event) {
     console.log('Income:', income);
     console.log('Rent/Mortgage:', rent);
     console.log('Car Payment & Insurance:', car);
+    console.log('Total:', income - rent - car);
   });

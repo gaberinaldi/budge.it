@@ -57,9 +57,19 @@ h1 {
 }
 
 .input button {
-    height: 50px;
-    width: 200px;
-    font-size: 20px;
+    height: 5vh;
+    width: 25vw;
+    font-size: 1rem;
     cursor: pointer;
     font-family: "Fredoka", sans-serif;
+    color: black;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.input button:hover {
+    transition: 0.2s;
+    background-color: green;
+    color: white;
 }

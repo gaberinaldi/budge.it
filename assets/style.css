@@ -5,10 +5,20 @@
     border: none;
 }
 
+body {
+    background-color: #F7F4EF;
+    padding-top: 3rem;
+}
+
 header {
-    background-color: #f4f4f4;
+    background-color: #342628;
     padding: 1rem;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:  1000;
+    padding: 1rem;
 }
 
 .navbar ul {
@@ -20,14 +30,19 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: green;
+    color: white;
     text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #FEAA00;
+    transition: 0.2s;
 }
 
 h1 {
     font-family: "Protest Strike";
     font-size: 3rem;
-    color: green;
+    color: #788402;
     text-align: center;
     padding-top: 2.5%;
 }
@@ -36,7 +51,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     font-family: "Fredoka", sans-serif;
@@ -45,6 +60,8 @@ h1 {
 .input p {
     font-size: 1rem;
     text-align: center;
+    text-transform: uppercase;
+    color: #342628;
 }
 
 .input input {
@@ -52,7 +69,8 @@ h1 {
     width: 25vw;
     font-size: 1rem;
     text-align: center;
-    border: 2px solid green;
+    background-color: white;
+    border: 2px solid #788402;
     border-radius: 5px;
 }
 
@@ -62,14 +80,24 @@ h1 {
     font-size: 1rem;
     cursor: pointer;
     font-family: "Fredoka", sans-serif;
-    color: black;
-    background-color: white;
-    border: 2px solid green;
+    color: white;
+    background-color: #342628;
     border-radius: 5px;
 }
 
 .input button:hover {
     transition: 0.2s;
-    background-color: green;
+    background-color: #FEAA00;
     color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    grid-template-rows: repeat(3, auto);
+    gap:  25px;
+    font-family: "Fredoka", sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
 }

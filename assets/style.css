@@ -18,7 +18,6 @@ header {
     width: 100%;
     top: 0;
     z-index:  1000;
-    padding: 1rem;
     box-shadow:  0  4px  2px -2px rgba(0,  0,  0,  0.1);
 }
 
@@ -30,6 +29,7 @@ header {
   }
 
 .navbar a {
+    font-size: 2rem;
     text-decoration: none;
     color: #058C42;
     text-transform: uppercase;
@@ -42,20 +42,19 @@ header {
 
 h1 {
     font-family: "Protest Strike";
-    font-size: 3rem;
+    font-size: 5rem;
     color: #058c42;
     text-align: center;
-    padding-top: 2.5%;
+    padding-top: 5rem;
 }
 
 .summary {
     overflow-wrap: break-word;
     text-align: center;
     margin:  0 auto;
-    font-size: .75rem;
+    font-size: 1.25rem;
     width: 50%;
-    padding-top: 1%;
-    padding-bottom: 5%;
+    padding-bottom: 5rem;
     font-family: "Fredoka", sans-serif
 }
 
@@ -64,12 +63,12 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    padding-bottom: 2.5%;
+    padding-bottom: 2.5rem;
     font-family: "Fredoka", sans-serif;
 }
 
 .input p {
-    font-size: .8rem;
+    font-size: 1.25rem;
     text-align: center;
     text-transform: uppercase;
     color: black;
@@ -78,7 +77,7 @@ h1 {
 .input input {
     height: 5vh;
     width: 25vw;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
     background-color: white;
     border: 2px solid black;
@@ -88,7 +87,7 @@ h1 {
 .input button {
     height: 5vh;
     width: 25vw;
-    font-size: 1rem;
+    font-size: 1.25rem;
     cursor: pointer;
     font-family: "Fredoka", sans-serif;
     color: white;
@@ -108,7 +107,11 @@ h1 {
     grid-template-rows: repeat(3, auto);
     font-family: "Fredoka", sans-serif;
     justify-content: center;
-    align-items: center;
     text-align: center;
     gap: 25px;
+    padding-bottom: 2.5%;
+}
+
+.guidelines p {
+    margin-bottom: 10px;
 }

@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #272635;
+    background-color: white;
     padding: 1rem;
     text-align: center;
     position: fixed;
@@ -19,6 +19,7 @@ header {
     top: 0;
     z-index:  1000;
     padding: 1rem;
+    box-shadow:  0  4px  2px -2px rgba(0,  0,  0,  0.1);
 }
 
 .navbar ul {
@@ -30,21 +31,32 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: white;
+    color: #058C42;
     text-transform: uppercase;
 }
 
 .navbar a:hover {
-    color: #B1E5F2;
+    color: #16DB65;
     transition: 0.2s;
 }
 
 h1 {
     font-family: "Protest Strike";
     font-size: 3rem;
-    color: #B1E5F2;
+    color: #058c42;
     text-align: center;
     padding-top: 2.5%;
+}
+
+.summary {
+    overflow-wrap: break-word;
+    text-align: center;
+    margin:  0 auto;
+    font-size: .75rem;
+    width: 50%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    font-family: "Fredoka", sans-serif
 }
 
 .input {
@@ -52,16 +64,15 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    padding-top: 2.5%;
     padding-bottom: 2.5%;
     font-family: "Fredoka", sans-serif;
 }
 
 .input p {
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: center;
     text-transform: uppercase;
-    color: #272635;
+    color: black;
 }
 
 .input input {
@@ -70,7 +81,7 @@ h1 {
     font-size: 1rem;
     text-align: center;
     background-color: white;
-    border: 2px solid #272635;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
@@ -81,13 +92,13 @@ h1 {
     cursor: pointer;
     font-family: "Fredoka", sans-serif;
     color: white;
-    background-color: #272635;
+    background-color: #16DB65;
     border-radius: 5px;
 }
 
 .input button:hover {
     transition: 0.2s;
-    background-color: #B1E5F2;
+    background-color: #058c42;
     color: white;
 }
 
@@ -95,9 +106,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2,  1fr);
     grid-template-rows: repeat(3, auto);
-    gap:  25px;
     font-family: "Fredoka", sans-serif;
     justify-content: center;
     align-items: center;
-    padding-left: 10px;
+    text-align: center;
+    gap: 25px;
 }

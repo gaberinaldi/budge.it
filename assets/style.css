@@ -93,6 +93,7 @@ h1 {
     color: white;
     background-color: #16DB65;
     border-radius: 5px;
+    margin-top: 50px;
 }
 
 .input button:hover {
@@ -109,7 +110,7 @@ h1 {
     justify-content: center;
     text-align: center;
     gap: 25px;
-    padding-bottom: 2.5%;
+    
 }
 
 .guidelines p {
@@ -119,18 +120,58 @@ h1 {
 .about {
     background-image: linear-gradient(90deg, #058c42, #16DB65);
     width: 100%;
-    height: 50vh;
+    height: 25rem;
     margin-bottom: 7.5rem;
     display: flex;
     align-items: center;
-
+    padding: 2.5rem;
 }
 
-.section{
-    width: 50%;
-    height: 25rem;
-    background-color: white;
-    margin-left: 5rem;
-    border: 2px solid black;
-    border-radius: 5px;
+@media screen and (max-width:  768px) {
+    .about {
+        height:  65rem;
+    }
+}
+
+.info { 
+    width: 75%;
+    height: 75%;
+    margin-left: 5rem;    
+    font-family: "Fredoka", sans-serif;
+    color: white;
+}
+
+@media screen and (max-width:  768px) {
+    .info {
+        width:  100%; 
+        margin-left:  0; 
+        margin-right:  0; 
+        padding-left: 5px;
+    }
+}
+
+.info h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.info p {
+    font-size: 1.5rem;
+    
+}
+.savingsIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+}
+
+.savingsIcon img{
+    height: 250px;
+}
+
+@media screen and (max-width:  768px) {
+    .savingsIcon {
+        display: none;
+    }
 }

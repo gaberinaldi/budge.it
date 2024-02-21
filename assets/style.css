@@ -130,8 +130,7 @@ h1 {
 
 @media screen and (max-width:  768px) {
     .guidelines i {
-        left: 25%;
-        top: 70%
+        display: none;
     }
 }
 
@@ -191,5 +190,34 @@ h1 {
 @media screen and (max-width:  768px) {
     .savingsIcon {
         display: none;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,  auto);
+    grid-template-rows: repeat(2, auto);
+    font-family: "Fredoka", sans-serif;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    gap: 10rem;
+    padding: 10px;
+    margin-bottom: 7.5rem;
+}
+
+.card {
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 black;
+    margin: auto;
+}
+
+@media screen and (max-width:  1920px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
     }
 }

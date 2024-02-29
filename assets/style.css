@@ -209,10 +209,19 @@ h1 {
 .card {
     width: 25rem;
     height: 25rem;
-    padding: 1rem;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 8px 0 black;
     margin: auto;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.25rem;
 }
 
 @media screen and (max-width:  1400px) {

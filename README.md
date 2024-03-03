@@ -20,6 +20,11 @@ This application was built using:
 
 Please refer to the LICENSE in the repo.
 
+## Screenshots
+
+![Home](https://github.com/gaberinaldi/budge.it/assets/126215578/6930caf8-c908-4b20-82ca-22bbf0b36613)
+![Savings](https://github.com/gaberinaldi/budge.it/assets/126215578/3cc3daba-d547-483b-a67b-46af805a34b1)
+
 ## Link 
 
 https://gaberinaldi.github.io/budge.it/

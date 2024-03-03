@@ -37,10 +37,10 @@ document.getElementById('btn').addEventListener('click', function(event) {
     const carPercentage = document.getElementById('carPercentage');
     carPercentage.innerHTML = carIncome.toFixed(2) + '%'; 
 
-    if (carIncome <= 15) {
+    if (carIncome < 15) {
       carGrade.innerHTML = 'Good';
       carGrade.style.color = 'green';
-     } else if (carIncome > 15 && carIncome < 20) {
+     } else if (carIncome >= 15 && carIncome <= 20) {
         carGrade.innerHTML = 'Average';
         carGrade.style.color = 'orange';
       } else {
@@ -52,10 +52,10 @@ document.getElementById('btn').addEventListener('click', function(event) {
     const utilitiesPercentage = document.getElementById('utilitiesPercentage');
     utilitiesPercentage.innerHTML = utilitiesIncome.toFixed(2) + '%';
 
-    if (utilitiesIncome <= 5) { 
+    if (utilitiesIncome < 5) { 
       utilitiesGrade.innerHTML = 'Good';
       utilitiesGrade.style.color = 'green';
-     } else if (utilitiesIncome > 5 && utilitiesIncome < 10) {
+     } else if (utilitiesIncome >= 5 && utilitiesIncome <= 10) {
         utilitiesGrade.innerHTML = 'Average';
         utilitiesGrade.style.color = 'orange';
       } else {
@@ -67,10 +67,10 @@ document.getElementById('btn').addEventListener('click', function(event) {
     const groceriesPercentage = document.getElementById('groceriesPercentage');
     groceriesPercentage.innerHTML = groceriesIncome.toFixed(2) + '%';
 
-    if (groceriesIncome <= 10) {
+    if (groceriesIncome < 10) {
       groceriesGrade.innerHTML = 'Good';
       groceriesGrade.style.color = 'green';
-     } else if (groceriesIncome > 10 && groceriesIncome < 20) {
+     } else if (groceriesIncome >= 10 && groceriesIncome <= 20) {
         groceriesGrade.innerHTML = 'Average';
         groceriesGrade.style.color = 'orange';
       } else {
@@ -82,10 +82,10 @@ document.getElementById('btn').addEventListener('click', function(event) {
     const gasPercentage = document.getElementById('gasPercentage');
     gasPercentage.innerHTML = gasIncome.toFixed(2) + '%';
 
-    if (gasIncome <= 5) {
+    if (gasIncome < 5) {
       gasGrade.innerHTML = 'Good';
       gasGrade.style.color = 'green';
-     } else if (gasIncome > 5 && gasIncome < 10) {
+     } else if (gasIncome >= 5 && gasIncome <= 10) {
         gasGrade.innerHTML = 'Average';
         gasGrade.style.color = 'orange';
       } else {
@@ -97,10 +97,10 @@ document.getElementById('btn').addEventListener('click', function(event) {
     const savingsPercentage = document.getElementById('savingsPercentage');
     savingsPercentage.innerHTML = savingsIncome.toFixed(2) + '%';
 
-    if (savingsIncome >= 20){
+    if (savingsIncome > 20){
       savingsGrade.innerHTML = 'Good';
       savingsGrade.style.color = 'green';
-    } else if (savingsIncome > 15 && savingsIncome < 20) {
+    } else if (savingsIncome >= 15 && savingsIncome <= 20) {
       savingsGrade.innerHTML = 'Average';
       savingsGrade.style.color = 'orange';
     } else {

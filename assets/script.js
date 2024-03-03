@@ -15,7 +15,7 @@ document.getElementById('btn').addEventListener('click', function(event) {
     if (total < 0) {
       savingsTotal.innerHTML = 'Uh oh, you lost a total of ' + total + ' this month. You should consider cutting back on some expenses.';
     } else if (total > 0) {
-        savingsTotal.innerHTML = 'Great job, you saved a total of '  + total +' this month!';
+        savingsTotal.innerHTML = 'Great job, you saved a total of $'  + total +' this month!';
     }
 
     const rentIncome = (rent / income) * 100;

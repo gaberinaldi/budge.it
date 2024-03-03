@@ -40,7 +40,7 @@ header {
     transition: 0.2s;
 }
 
-h1 {
+#home {
     font-family: "Protest Strike";
     font-size: 5rem;
     color: #058c42;
@@ -137,17 +137,10 @@ h1 {
 .about {
     background-image: linear-gradient(90deg, #058c42, #16DB65);
     width: 100%;
-    height: 25rem;
     margin-bottom: 7.5rem;
     display: flex;
     align-items: center;
     padding: 2.5rem;
-}
-
-@media screen and (max-width:  768px) {
-    .about {
-        height:  65rem;
-    }
 }
 
 .info { 
@@ -174,6 +167,7 @@ h1 {
 
 .info p {
     font-size: 1.5rem;
+    padding-bottom: 5px;
     
 }
 .savingsIcon {
@@ -187,7 +181,7 @@ h1 {
     height: 250px;
 }
 
-@media screen and (max-width:  768px) {
+@media screen and (max-width:  1500px) {
     .savingsIcon {
         display: none;
     }
@@ -215,6 +209,14 @@ h1 {
     margin: auto;
 }
 
+.card h1 {
+    font-family: "Protest Strike";
+    font-size: 5rem;
+    color: #058c42;
+    text-align: center;
+    padding-top: 4rem;
+}
+
 .card h3 {
     font-size: 1.5rem;
 }
@@ -229,4 +231,43 @@ h1 {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+footer {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.footer-format { 
+    width: 100%;
+    padding: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap:7.5%;
+}
+
+.icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #058c42;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.icons a i {
+    font-size: 2em;
+    color: white;
+}
+
+.icons a:hover {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.icons a:hover i {
+    color: black;
+    transition: 0.5s;
 }

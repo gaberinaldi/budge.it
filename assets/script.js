@@ -22,10 +22,10 @@ document.getElementById('btn').addEventListener('click', function(event) {
     const rentPercentage = document.getElementById('rentPercentage');
     rentPercentage.innerHTML = rentIncome.toFixed(2) + '%';
     
-    if (rentIncome <= 30) {
+    if (rentIncome < 30) {
       rentGrade.innerHTML = 'Good';
       rentGrade.style.color = 'green';
-     } else if (rentIncome > 30 && rentIncome < 35) {
+     } else if (rentIncome >= 30 && rentIncome <= 35) {
         rentGrade.innerHTML = 'Average';
         rentGrade.style.color = 'orange';
       } else {
